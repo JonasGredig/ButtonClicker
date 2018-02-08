@@ -8,6 +8,7 @@ import javax.inject.Named;
 
 @Named
 @ManagedBean
+@ApplicationScoped
 public class ClickController {
 
     private ClickModel clickModel;
