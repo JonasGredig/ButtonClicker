@@ -8,7 +8,6 @@ import javax.inject.Named;
 
 @Named
 @ManagedBean
-@ApplicationScoped
 public class ClickController {
 
     private ClickModel clickModel;
@@ -21,8 +20,8 @@ public class ClickController {
         return clickModel.getAmount();
     }
 
-    public boolean increaseAmount() {
+    public String increaseAmount() {
         clickModel.setNumber(clickModel.getAmount() + 1);
-        return true;
+        return "/index.xhtml";
     }
 }

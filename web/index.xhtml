@@ -7,5 +7,8 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <f:view>
       <h:outputLabel value="Anzahl clicks: + #{clickController.amount}"/>
+      <div>
+         <h:commandButton action="#{clickController.increaseAmount}" value="Die Zahl erhöhen"/>
+      </div>
    </f:view>
 </html>

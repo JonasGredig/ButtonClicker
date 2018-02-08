@@ -2,14 +2,18 @@ package ch.baumink.buttonclicker.model;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+
 public class ClickModel  {
 
+    private long i = 0;
+
     public long getAmount() {
-        throw new NotImplementedException();
+        return this.i;
     }
 
     public boolean setNumber(long number) {
-        throw new NotImplementedException();
+        i = number;
+        return false;
     }
 
 }
