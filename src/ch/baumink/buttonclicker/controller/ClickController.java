@@ -1,6 +1,14 @@
 package ch.baumink.buttonclicker.controller;
 
 import ch.baumink.buttonclicker.model.ClickModel;
+
+import javax.annotation.ManagedBean;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
+
+@Named
+@ManagedBean
+@ApplicationScoped
 public class ClickController {
 
     private ClickModel clickModel;
