@@ -6,12 +6,21 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
+    <h:head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    </h:head>
     <div>
-        <h:outputLabel value="Anzahl clicks: + #{clickController.amount}"/>
-        <div>
-            <h:form>
-                <h:commandButton action="#{clickController.increaseAmount}" value="Die Zahl erhöhen"/>
-            </h:form>
+        <h1 style="text-align: center; margin-top: 10%">ButtonClicker!</h1>
+    </div>
+
+    <div class="card" style="margin: 40px 35%;">
+        <div class="card-body">
+            <h:outputLabel value="Clicks: #{clickController.amount}"/>
+            <div>
+                <h:form>
+                    <h:commandButton action="#{clickController.increaseAmount}" styleClass="btn btn-info" value="+1"/>
+                </h:form>
+            </div>
         </div>
     </div>
 </f:view>
